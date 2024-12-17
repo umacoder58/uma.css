@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 100px;
+            width: 250px;
+            background-color: red;
+            /*For Browsers that do not support gradients*/
+            background-image: linear-gradient(to top right, rgb(223, 22, 22), orange, yellow, green, blue, indigo, violet);
+        }
+
+        /*the animation code*/
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        /*the element to apply the animation to*/
+
+        div {
+            width: 150px;
+            height: 125px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            text-align: center;
+            top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grad1" style="text-align: center;margin: auto;color: #888888;font-size: 40px;font-weight: bold;">
+        Wellcome to Codingal
+    </div>
+    <div>
+        <h1>Mam this is my work</h1>
+    </div>
+</body>
+
+</html>
